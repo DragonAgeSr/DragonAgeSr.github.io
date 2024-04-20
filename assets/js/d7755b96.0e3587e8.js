@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkda_sr_wiki=self.webpackChunkda_sr_wiki||[]).push([[8720],{1966:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
