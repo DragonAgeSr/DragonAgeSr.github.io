@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+@font-face {
+  font-family: InquisitionSc;
+  src: url(@site/static/fonts/InquisitionSc.woff);
+}
+
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ff7800;
+  --ifm-color-primary-dark: #e66c00;
+  --ifm-color-primary-darker: #d96600;
+  --ifm-color-primary-darkest: #b35400;
+  --ifm-color-primary-light: #ff861a;
+  --ifm-color-primary-lighter: #ff8c26;
+  --ifm-color-primary-lightest: #ffa14d;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-font-family-base: 'Maven Pro';
+
+  --ability-color: #01b619;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ffa348;
+  --ifm-color-primary-dark: #ff9327;
+  --ifm-color-primary-darker: #ff8a17;
+  --ifm-color-primary-darkest: #e57200;
+  --ifm-color-primary-light: #ffb369;
+  --ifm-color-primary-lighter: #ffbc79;
+  --ifm-color-primary-lightest: #ffd4aa;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ability-color: #8eee9b;
+}
+
+h1 {
+  font-family: 'InquisitionSc';
+}
+
+.Tooltip {
+  background-color: #444;
+  color: white;
+  font-size: 90%;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: calc(100vw - 10px);
+}
+
+.highlight {
+  background-color: #444950;
+  border-radius: 2px;
+  color: #FFF;
+  padding: 0.2rem;
+}
+
+
+.table {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.party {
+  flex: 50%;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: #ecf2f7;
+  padding: 1rem;
+}
+
+[data-theme='dark'] .party {
+  background-color: #242526;
+}
+
+.Float {
+  width: 15rem;
+  margin-bottom: calc(var(--ifm-paragraph-margin-bottom) * -1.4);
+  
+}
+
+@media screen and (max-width: 700px){
+  .table {
+    flex-direction: column;
+  }
+
+  .Float {
+    width: 100%;
+    margin-top: 0px !important;
+  }
+}
+
+.PartyCharacter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 1 10%;
+  min-width: 64px;
+}
+
+.separator {
+  margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
