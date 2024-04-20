@@ -11,11 +11,11 @@ const config = {
   favicon: 'img/DAIIcon.png',
 
   // Production URL
-  url: 'https://DASR.github.io',
-  baseUrl: '/DASR-Wiki',
+  url: 'https://dragonagesr.github.io/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
-  organizationName: 'DASR',
+  organizationName: 'DragonAgeSR',
   projectName: 'DASR-Wiki',
   trailingSlash: false,
 
@@ -29,7 +29,7 @@ const config = {
 
   customFields: {
     discordUrl: 'http://discord.itt.run/',
-    githubUrl: 'https://github.com/DASR/DASR-Wiki',
+    githubUrl: 'https://github.com/DragonAgeSR/DragonAgeSR.github.io',
   },
 
   presets: [
@@ -39,7 +39,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/DASR/DASR-Wiki/blob/main/',
+            'https://github.com/DragonAgeSR/DragonAgeSR.github.io/blob/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
 
@@ -136,7 +136,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/category/welcome',
+                to: '/',
               },
             ],
           },
